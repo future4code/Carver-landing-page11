@@ -7,7 +7,7 @@
 
 /* CSS GERAL */
 Body{
-    background-image: url("./img/BackgroundOther.png");
+    background-color: silver;
     color: white;
     height: 100vh;
 }
@@ -16,10 +16,11 @@ Body{
 
 .home-header{
     display: flex;
-    background-color: rgb(80, 37, 30);
+    background-color:white;
     padding: 10px;
     justify-content:space-between;
     flex-wrap: wrap;
+    
 }
 
 .home-header div{
@@ -58,6 +59,7 @@ Body{
 .home-container{
     display: flex;
     height: 100vh;
+    
 }
 
 .home-container-nav{
@@ -85,6 +87,42 @@ Body{
 .home-container-site{
     padding: 1rem;
 }
+.cards-produtos{
+    border: 1px solid black;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 2px 2px 2px black;
+    color: black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.cards-produtos img{
+ 
+   
+}
+
+.cards-produtos button{
+width: 50%;
+align-items: center;
+
+}
+.container-produtos{
+
+    border: 1px solid black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
 
 /* FOOTER */
 .home-footer{
