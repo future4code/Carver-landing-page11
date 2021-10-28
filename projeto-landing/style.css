@@ -1,0 +1,124 @@
+*{
+    Padding: 0;
+    Margin: 0;
+    text-decoration: none;
+    outline: 0
+}
+
+/* CSS GERAL */
+Body{
+    background-image: url("./img/BackgroundOther.png");
+    color: white;
+    height: 100vh;
+}
+
+/* HEADER */
+
+.home-header{
+    display: flex;
+    background-color: rgb(80, 37, 30);
+    padding: 10px;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.home-header div{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.home-header a{
+    display: flex;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.home-header a:hover{
+    color: rgb(173, 108, 22);
+    transition: all 0.5s ease-in-out;
+}
+
+.home-header img{
+    height: 2rem
+}
+
+.header-input{
+    border: none;
+    background-color: black;
+    color:silver;
+    padding: 5px 10px;
+    width: 300px;
+    max-width: 10rem;
+}
+
+/* INNER */
+
+.home-container{
+    display: flex;
+    height: 100vh;
+}
+
+.home-container-nav{
+    background-color: rgb(59, 30, 25);
+    width: 11rem;
+}
+
+.home-container-nav div{
+    font-size: 1rem;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(173, 108, 22);
+    color: rgb(80, 37, 30);
+    font-weight: bold;
+}
+
+.home-container-nav a div:hover{
+    font-size: 1.1rem;
+    color: rgb(36, 22, 5);
+    transition: all 0.5s ease-in-out;
+}
+
+.home-container-site{
+    padding: 1rem;
+}
+
+/* FOOTER */
+.home-footer{
+    display: flex;
+    color:rgb(0, 0, 0);
+    background-color: rgb(80, 37, 30);
+    padding: 10px;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-links{
+    display: flex;
+}
+
+/* .footer-links div{
+} */
+
+.footer-link1{
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    background-color: blue;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.footer-link2{
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(0, 102, 255);
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
