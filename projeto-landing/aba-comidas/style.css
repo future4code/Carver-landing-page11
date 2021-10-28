@@ -109,13 +109,13 @@ Body{
 }
 
 .cards-produtos img{
- 
+    width: 150px;
    
 }
 
 .cards-produtos button{
-width: 50%;
-align-items: center;
+    width: 50%;
+    align-items: center;
 
 }
 .container-produtos{
