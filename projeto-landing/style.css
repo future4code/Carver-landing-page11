@@ -65,7 +65,7 @@ Body {
 }
 
 .home-container-nav {
-  background-color: rgb(59, 30, 25);
+  background-color: #51260e;
   width: 11rem;
 }
 
@@ -140,10 +140,11 @@ Body {
 /* FOOTER */
 .home-footer {
   display: flex;
-  color: rgb(0, 0, 0);
-  background-color: rgb(80, 37, 30);
+  color: white;
+  font-weight: bold;
+  background-color: #51260e;
   padding: 10px;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
