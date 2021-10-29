@@ -18,6 +18,7 @@ Body {
 /* HEADER */
 
 .home-header {
+  border: 1px solid black;
   display: flex;
   background-color: white;
   padding: 10px;
@@ -61,6 +62,63 @@ Body {
 .home-container {
   display: flex;
   height: 100vh;
+  align-items: center;
+}
+
+.home-main{
+  display: grid;
+  text-align: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.home-main form{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #6d5040;
+  width: 35%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.home-main form label{
+  font-size: 1.5rem;
+  color:white;
+}
+
+label {
+  width: 150px;
+  display: inline-block;
+  text-align:end;
+
+  text-align: left;
+}
+
+input{
+  display: flex;
+  width: 100%;
+  padding: 5px 2px;
+  margin-bottom: 11px;
+  flex-wrap: wrap;
+}
+
+button{
+  padding:20px;
+}
+
+#feedback{
+  height: 100px;
+  /* text-align: start;
+  text-align:justify; */
+}
+
+textarea{
+  width: 90%;
+  /* max-width: 91%; */
+  resize: none
 }
 
 .home-container-nav {
@@ -89,21 +147,6 @@ Body {
 .home-container-site {
   padding: 1rem;
 }
-.cards-produtos {
-  border: 1px solid black;
-  display: flex;
-  border: 1px solid black;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  padding: 10px 0px;
-  box-shadow: 2px 2px 2px black;
-  color: black;
-  border-radius: 10px;
-  margin: 0.7rem;
-  background-color: white;
-}
 
 .cards-produtos button {
   width: 50%;
@@ -115,23 +158,6 @@ Body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-}
-
-#card-comprar {
-  font-size: 0.9rem;
-  margin: 5px;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-  background-color: rgb(173, 108, 22);
-  color: rgb(80, 37, 30);
-  font-weight: bold;
-}
-
-#card-comprar:hover {
-  font-size: 1rem;
-  color: rgb(36, 22, 5);
-  transition: all 0.5s ease-in-out;
 }
 
 /* FOOTER */
@@ -153,40 +179,97 @@ footer img {
   height: 1.5em;
   padding: 0 15px;
 }
+
+
 @media screen and (min-device-width : 320px) and
  (max-device-width : 480px) {
-   
+ 
+  .home-main{
+    display: grid;
+    text-align: start;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top:10%;
+  }
+
+
   .home-container{
-
-    display:grid;
-    grid-template-columns: 1fr;
-  }
-
-  .container-produtos{
     display: grid;
+    grid-template-rows: 100px 1fr;
     grid-template-columns: 1fr;
   }
+
   .home-container-nav{
+
+    height: 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 100%;
   }
-
-    .header-input{
-      display: none;
-      
-    }
-
-    .home-header {
-      display: flex;
-      justify-content: center;
-      border: 1px solid black;
-    }
-
-    body{
-      background-size: 100%;
-      background-repeat: repeat;
+  .header-input{
+    display: none;
     
-    }
+  }
+  .home-header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+  }
+
+
+
+/* FORM */
+
+.home-main form{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #6d5040;
+  width: 75%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.home-main form label{
+  font-size: 1.5rem;
+  color:white;
+}
+
+label {
+  width: 150px;
+  display: inline-block;
+  text-align:end;
+
+  text-align: left;
+}
+
+input{
+  display: flex;
+  width: 100%;
+  padding: 5px 2px;
+  margin-bottom: 11px;
+  flex-wrap: wrap;
+}
+
+button{
+  padding:20px;
+}
+
+#feedback{
+  height: 100px;
+  /* text-align: start;
+  text-align:justify; */
+}
+
+textarea{
+  width: 75%;
+  /* max-width: 91%; */
+  resize: none
+}
+
+
+
  }
